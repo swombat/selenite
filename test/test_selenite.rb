@@ -7,7 +7,9 @@ class TestSelenite < Minitest::Test
     refute_nil ::Selenite::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_transcribe_audio_raises_not_implemented_error
+    assert_raises(NotImplementedError) do
+      Selenite.transcribe_audio("test_audio.mp3")
+    end
   end
 end

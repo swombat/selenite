@@ -4,5 +4,9 @@ require_relative "selenite/version"
 
 module Selenite
   class Error < StandardError; end
-  # Your code goes here...
+
+  def self.transcribe_audio(audio_file)
+    # Placeholder implementation
+    raise NotImplementedError, "transcribe_audio method is not implemented yet"
+  end
 end
